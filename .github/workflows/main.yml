@@ -74,7 +74,7 @@ jobs:
 
     - name: Build LXC-Kernel-SU
       run: |
-        git clone -b android-11-lxc https://github.com/tomxi1997/android_kernel_samsung_sm8150.git lxc --depth=1
+        git clone -b android-11-lxc https://github.com/tomxi1997/android_kernel_samsung_sm8150.git lxc 
         export ARCH=arm64
         export SUBARCH=arm64
         export PATH=$(pwd)/clang-aosp/bin:$(pwd)/aarch64-4.9/bin:$(pwd)/armhf-4.9/bin:$PATH
